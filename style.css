@@ -1,0 +1,63 @@
+
+body {
+    display: grid;
+    grid-template-areas: "header header"
+                         "content content"
+                         "footer footer";
+
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    background-color: rgb(187, 185, 185);
+    color: white;
+}
+
+
+main {
+    display: grid;
+    grid-row: content;
+    grid-column: content;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding-top: 100px;
+    margin: 0px 50px 0px 150px;
+    text-align: left;
+    color: black;
+}
+
+
+
+header {
+    grid-row: header;
+    grid-column: header;
+    text-align: center;
+    background-color: slategrey;
+    
+}
+
+aside {
+    grid-row: aside;
+    grid-column: aside;
+    margin-top: 20px;
+}
+
+header > p {
+    float: inline-end;
+}
+
+input{
+    display: block;
+    float: inline-end;
+    margin-right: 50px;
+}
+
+button {
+float: inline-end;
+}
+
+footer {
+    grid-row: footer;
+    grid-column: footer;
+    background-color: slategrey;
+}
+
